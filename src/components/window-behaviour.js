@@ -132,8 +132,8 @@ module.exports = {
       if (win.tray) {
         var type = platform.isOSX ? 'menubar' : 'tray';
         var alert = label ? '_alert' : '';
-        var extension = platform.isOSX ? '.tiff' : '.ico';
-        win.tray.icon = 'images/icon_' + type + alert + extension;
+        var extension = platform.isOSX ? '.tiff' : '.png';
+        win.tray.icon = 'images/icon_' + type + alert + (platform.isPlasma5 ? '_24x24' : '') + extension;
       }
     }, 100);
   },

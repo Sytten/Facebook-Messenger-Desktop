@@ -11,5 +11,6 @@ module.exports = {
   isLinux: platform === 'linux',
   name: platform + arch,
   type: platform,
-  arch: arch
+  arch: arch,
+  isPlasma5: (platform === 'linux' && process.env["KDE_FULL_SESSION"] !== undefined && process.env["KDE_FULL_SESSION"] !== "" && process.env["KDE_SESSION_VERSION"] === "5")
 };
