@@ -1,0 +1,30 @@
+# Maintainer: Alice Heather <AliceHeather64 AT gmail DOT com> - 2016
+# Contributor: Michael Corrigan <ghost.vonage AT gmail DOT com>
+# Contributor: tomsik68	<tomsik68 AT gmail DOT com>
+# Contributor: gandl <gandlspam AT gmail DOT com>
+# Contributor: Jristz <prflr88 AT gmail DOT com>
+# Upstream URL: http://messengerfordesktop.com/
+
+pkgname=messengerfordesktop
+pkgver=v1.4.7
+pkgrel=1
+pkgdesc="Beautiful desktop client for Facebook Messenger. Chat without being distracted by your feed or notifications."
+PKGEXT='.pkg.tar'
+arch=('i686' 'x86_64')
+url="http://messengerfordesktop.com/"
+license=('MIT')
+options=(!strip)
+depends=('gcc-libs' 'cairo' 'libxtst' 'alsa-lib' 'gtk2' 'gconf' 'libnotify' 'fontconfig' 'nss')
+install=$pkgname.install
+md5sums_i686=('e580c3ce689c05cb131dc3a34356555e')
+source_i686=("https://github.com/InfiRandia/Facebook-Messenger-Desktop/releases/download/$pkgver-arch/$pkgname-$pkgver-linux32.tar.gz")
+md5sums_x86_64=('dd41fb98c0a15f16761a7da4991f7165')
+source_x86_64=("https://github.com/InfiRandia/Facebook-Messenger-Desktop/releases/download/$pkgver-arch/$pkgname-$pkgver-linux64.tar.gz")
+package()
+{
+	chmod -R g-w opt
+	chmod -R g-w usr
+
+	mv opt "${pkgdir}"
+	mv usr "${pkgdir}"
+}
