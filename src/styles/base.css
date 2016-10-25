@@ -19,3 +19,115 @@ max-width: 800px;
 ._4sp8 {
 min-width: 0px !important;
 }
+
+/* fix percentage occupied by contacts */
+._1enh {
+    flex: 0 0 35%;
+}
+
+/* override existing auto resize */
+@media all and (max-width: 700px) {
+    ._1enh {
+        flex: 0 0 35%;
+		    min-width: 240px;
+	  }
+	  ._3rh8 {
+        display: inline
+    }
+	  ._1rhc {
+        display:inline
+    }
+    ._1ht5 ._1qt4,.safari.webkit ._1ht5 ._1qt4,.ie10 ._1ht5 ._1qt4 {
+        display: inherit
+    }
+    ._1ht1 ._2j6 {
+        display: inline
+    }
+    ._2ogr::before {
+        content:inline
+    }
+	  ._4kzu {
+        display:inline
+    }
+	  ._1bqr {
+        display:inline
+    }
+    ._36ic {
+        justify-content: space-between;
+    }
+    ._36ic ._1tqi {
+        display: inline
+    }
+    ._4kzu {
+        display: inline;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 900px) {
+    ._51oq {
+        bottom:0px
+    }
+}
+
+/* fix media auto resize */
+@media all and (max-width: 700px) {
+	  ._1enh {
+		    min-width: 150px;
+	  }
+	  ._3rh8 {
+        display: none
+    }
+}
+
+@media all and (max-width: 450px) {
+	._1rhc {
+        display:none
+    }
+	._1ht3._1ht1 {
+        background-color:rgba(0, 132, 255, .2);
+        transition: background-color .5s
+    }
+    ._1ht1._1ht2 {
+        transition: background-color .5s
+    }
+    ._1ht5 ._1qt4,.safari.webkit ._1ht5 ._1qt4,.ie10 ._1ht5 ._1qt4 {
+        display: none
+    }
+    ._1ht1 ._2j6 {
+        display: none
+    }
+    ._2ogr::before {
+        content:none
+    }
+	  ._4kzu {
+        display:none
+    }
+	  ._1bqr {
+        display:none
+    }
+	  ._1enh {
+        flex-basis:74px;
+        min-width: 74px;
+    }
+    .safari.webkit ._1enh {
+        -webkit-flex-basis: 74px
+    }
+    ._36ic ._1tqi {
+        display: none
+    }
+    ._4kzu {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    ._36ic {
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 900px) {
+    ._51oq {
+        bottom:90px
+    }
+}
