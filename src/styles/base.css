@@ -5,7 +5,7 @@
   display: none;
 }
 
-/* fixing the scrollbar bug in some languages*/
+/* fixing the scrollbar bug in some languages */
 ._kmc {
 line-height: 1.29;
 }
@@ -13,4 +13,9 @@ line-height: 1.29;
 /* fix huge website previews */
 ._3058._15gf {
 max-width: 800px;
+}
+
+/* fix out of window text and other elements */
+._4sp8 {
+min-width: 0px !important;
 }
