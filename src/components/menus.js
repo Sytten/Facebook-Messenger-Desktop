@@ -404,7 +404,7 @@ module.exports = {
     }
 
     var tray = new gui.Tray({
-      icon: 'images/icon_' + (platform.isOSX ? 'menubar.tiff' : 'tray.png')
+      icon: 'images/icon_' + (platform.isOSX ? 'menubar.tiff' : 'tray' + (platform.isPlasma5 ? '_24x24' : '') + '.png')
     });
 
     tray.on('click', function() {
